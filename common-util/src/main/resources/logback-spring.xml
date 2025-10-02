@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <springProperty scope="context" name="service-name" source="spring.application.name"/>
+    <springProperty scope="context" name="version" source="info.app.version"/>
+
+    <!-- Register Custom Encryption Converter -->
+    <conversionRule conversionWord="encryptedMsg" converterClass="com.amsidh.mvc.common.logging.EncryptedMessageConverter"/>
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <!-- Configure Timestamp and TimeZone related changes -->
+                <timestamp>
+                    <fieldName>@timestamp</fieldName>
+                    <pattern>yyyy-MM-dd'T'HH:mm:ss.SSS'Z'</pattern>
+                    <timeZone>UTC</timeZone>
+                </timestamp>
+                <!--<sequence/>-->
+                <!-- Configure Application Context related changes -->
+                <context/>
+                <!-- MDC Configuration-->
+                <mdc/>
+                <!-- Log level Configuration-->
+                <logLevel>
+                    <fieldName>severity</fieldName>
+                </logLevel>
+                <!-- Thread name Configuration-->
+                <threadName>
+                    <fieldName>thread</fieldName>
+                </threadName>
+                <!-- Caller Class Detail Configuration-->
+                <callerData>
+                    <fieldName>logClassInfo</fieldName>
+                    <classFieldName>class</classFieldName>
+                    <methodFieldName>method</methodFieldName>
+                    <lineFieldName>line</lineFieldName>
+                    <fileFieldName>file</fileFieldName>
+                </callerData>
+                <arguments>
+                    <includeNonStructuredArguments>false</includeNonStructuredArguments>
+                </arguments>
+                <logstashMarkers/>
+
+                <!-- Original message field -->
+                <message>
+                    <fieldName>message</fieldName>
+                </message>
+                <!-- Encrypted message with sensitive data protection -->
+                <pattern>
+                    <pattern>{"encryptedMessage": "%encryptedMsg"}</pattern>
+                </pattern>
+                <stackHash>
+                    <fieldName>exception-hash</fieldName>
+                </stackHash>
+                <stackTrace>
+                    <fieldName>exception</fieldName>
+                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+                        <inlineHash>true</inlineHash>
+                        <shortenedClassNameLength>36</shortenedClassNameLength>
+                        <maxDepthPerThrowable>20</maxDepthPerThrowable>
+                        <maxLength>8192</maxLength>
+                    </throwableConverter>
+                </stackTrace>
+
+            </providers>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>

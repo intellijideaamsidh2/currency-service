@@ -1,0 +1,11 @@
+kubectl run -i --tty busybox -n currency --image=busybox --restart=Never -- sh
+
+
+wget -qO- http://currency-exchange.currency.svc.cluster.local:8181/actuator/health
+wget -qO- http://currency-conversion.currency.svc.cluster.local:8282/actuator/health
+
+
+
+
+kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
+

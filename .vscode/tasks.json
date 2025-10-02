@@ -1,0 +1,389 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Build MkDocs site to preview style changes",
+			"type": "shell",
+			"command": "mkdocs build -f mkdocs\\mkdocs.yml",
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}

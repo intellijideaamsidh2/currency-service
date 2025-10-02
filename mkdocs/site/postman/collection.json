@@ -1,0 +1,58 @@
+{
+    "info": {
+        "name": "Currency Service",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "ac5e67d0-2b72-4d0a-9a6a-9c4b7b3a1a1f"
+    },
+    "variable": [
+        {
+            "key": "base_exchange",
+            "value": "http://localhost:8000"
+        },
+        {
+            "key": "base_conversion",
+            "value": "http://localhost:8100"
+        }
+    ],
+    "item": [
+        {
+            "name": "Get Exchange Rate",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "{{base_exchange}}/currencyexchange/USD/to/INR/rate",
+                    "host": [
+                        "{{base_exchange}}"
+                    ],
+                    "path": [
+                        "currencyexchange",
+                        "USD",
+                        "to",
+                        "INR",
+                        "rate"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Convert Currency",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "{{base_conversion}}/currencyconversion/USD/to/INR/quantity/100",
+                    "host": [
+                        "{{base_conversion}}"
+                    ],
+                    "path": [
+                        "currencyconversion",
+                        "USD",
+                        "to",
+                        "INR",
+                        "quantity",
+                        "100"
+                    ]
+                }
+            }
+        }
+    ]
+}

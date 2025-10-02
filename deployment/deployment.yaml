@@ -1,0 +1,79 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: currency
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-exchange
+  namespace: currency
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-exchange
+  template:
+    metadata:
+      labels:
+        app: currency-exchange
+    spec:
+      containers:
+        - name: app
+          image: "amsidhmicroservice/currency-exchange:latest"
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8181
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-exchange
+  namespace: currency
+spec:
+  selector:
+    app: currency-exchange
+  ports:
+    - name: http
+      port: 8181
+      targetPort: 8181
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: currency-conversion
+  namespace: currency
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: currency-conversion
+  template:
+    metadata:
+      labels:
+        app: currency-conversion
+    spec:
+      containers:
+        - name: app
+          image: "amsidhmicroservice/currency-conversion:latest"
+          imagePullPolicy: Always
+          env:
+            - name: CURRENCY_EXCHANGE_SERVICE_URL
+              value: "http://currency-exchange.currency.svc.cluster.local:8181"
+          ports:
+            - containerPort: 8282
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: currency-conversion
+  namespace: currency
+spec:
+  selector:
+    app: currency-conversion
+  ports:
+    - name: http
+      port: 8282
+      targetPort: 8282
+  type: ClusterIP

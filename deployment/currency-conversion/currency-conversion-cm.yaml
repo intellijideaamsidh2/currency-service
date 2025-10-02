@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  CURRENCY_EXCHANGE_SERVICE_URL: http://currency-exchange.exchange:8181
+kind: ConfigMap
+metadata:
+  name: currency-conversion-cm
+  namespace: conversion

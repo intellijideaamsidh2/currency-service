@@ -1,0 +1,72 @@
+# Common Util Configuration - Centralized for all microservices
+common-util:
+  logging:
+    request-response:
+      enabled: true
+      max-payload-length: 10000
+      include-headers: true
+      include-body: true
+      mask-sensitive-data: true
+    service:
+      enabled: true
+
+
+# Spring Boot Actuator Configuration - Centralized for all microservices
+management:
+  # Health Check Configuration for Cloud Platforms
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus,configprops,env,loggers,threaddump,heapdump,circuitbreakers,ratelimiters,retries,bulkheads,circuitbreakerevents
+  
+  endpoint:
+    health:
+      show-details: when-authorized
+      show-components: always
+  
+  health:
+    defaults:
+      enabled: true
+    circuitbreakers:
+      enabled: true
+    diskspace:
+      enabled: true
+    ping:
+      enabled: true
+  
+  # Metrics Configuration
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+        descriptions: true
+    distribution:
+      percentiles-histogram:
+        http:
+          server:
+            requests: true
+      percentiles:
+        http:
+          server:
+            requests: 0.5,0.95,0.99
+    tags:
+      application: ${spring.application.name:microservice}
+  
+  # Info Endpoint Configuration
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+    os:
+      enabled: true
+  
+  # Security for Actuator Endpoints
+  security:
+    enabled: false
+  
+  # Distributed Tracing Configuration
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
